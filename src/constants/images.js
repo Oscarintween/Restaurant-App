@@ -15,6 +15,7 @@ import findus from '../assets/findus.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
+import reservation from '../assets/reservation.jpg'
 
 export default {
   bg,
@@ -26,6 +27,7 @@ export default {
   gallery04,
   knife,
   logo,
+  reservation,
   menu,
   overlaybg,
   spoon,

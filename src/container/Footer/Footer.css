@@ -2,14 +2,13 @@
     width: 100%;
     position: relative;
     z-index: 1;
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
     background: var(--color-black);
     padding-top: 0;
+    border-top: groove 3px var(--color-golden);
 }
 
 .app__footer-links {
@@ -17,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     margin-top: 5rem;
     padding: 0 2rem;
 }

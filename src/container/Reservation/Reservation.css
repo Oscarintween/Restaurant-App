@@ -1,0 +1,7 @@
+.app__reservation-item{
+    align-self: center;
+    justify-self: center;
+}
+.app__reservation_img img{
+    border: solid 1.1vw #DCCA87;
+}
