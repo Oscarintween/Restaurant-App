@@ -56,27 +56,51 @@ const cocktails = [
   },
 ];
 
-const awards = [
+const entree = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Braised Short Ribs',
+    price: '$45'
   },
   {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: "Barilla Lasagna",
+    price: '$65',
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Chicken Cordon Bleu',
+    price: '$55',
   },
   {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Italian Stuffed Flank Steak',
+    price: '$59',
+  },
+  {
+    title: 'Eggplant Parmesan',
+    price: '$48',
   },
 ];
 
-export default { wines, cocktails, awards };
+const mainCourse = [
+  {
+    title: 'Goat cheese pissaladiere tarts',
+    price: '$35',
+  },
+  {
+    title: "Chicken sate skewers",
+    price: '$29',
+  },
+  {
+    title: 'Hoisin chicken rice paper rolls',
+    price: '$32',
+  },
+  {
+    title: 'Oysters Rockefeller',
+    price: '$39',
+  },
+  {
+    title: 'Lumpia',
+    price: '$31',
+  },
+];
+
+
+export default { wines, cocktails, entree, mainCourse };
