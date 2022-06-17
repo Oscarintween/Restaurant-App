@@ -1,4 +1,4 @@
 import images from './images';
-import data from './data';
+import {wines,mainCourse,entrees,cocktails} from './data';
 
-export { images,data };
+export { images, wines, mainCourse, entrees, cocktails};

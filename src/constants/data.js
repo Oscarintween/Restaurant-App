@@ -1,6 +1,6 @@
 
 
-const wines = [
+export const wines = [
   {
     title: 'Chapel Hill Shiraz',
     price: '$56',
@@ -28,7 +28,7 @@ const wines = [
   },
 ];
 
-const cocktails = [
+export const cocktails = [
   {
     title: 'Aperol Sprtiz',
     price: '$20',
@@ -56,7 +56,7 @@ const cocktails = [
   },
 ];
 
-const mainCourse = [
+export const mainCourse = [
   {
     title: 'Braised Short Ribs',
     price: '$65'
@@ -83,7 +83,7 @@ const mainCourse = [
   },
 ];
 
-const entrees = [
+export const entrees = [
   {
     title: 'Goat cheese pissaladiere tarts',
     price: '$35',
@@ -110,9 +110,3 @@ const entrees = [
   },
 ];
 
-export {
-  wines,
-  cocktails,
-  mainCourse,
-  entrees
-}

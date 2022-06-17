@@ -1,7 +1,9 @@
 import React from 'react';
 
 import { SubHeading, MenuItem } from '../../components';
-import { data, images } from '../../constants';
+import { images } from '../../constants';
+import { entrees } from '../../constants/data';
+import { mainCourse } from '../../constants/data';
 import './MainCourseMenu.css';
 
 const MainCourseMenu = () => (
@@ -15,7 +17,7 @@ const MainCourseMenu = () => (
       <div className="app__maincourseMenu-menu_entrees  flex__center">
         <p className="app__maincourseMenu-menu_heading">Entrees</p>
         <div className="app__beveragesMenu_menu_items">
-          {data.entrees.map((entree, index) => (
+          {entrees.map((entree, index) => (
             <MenuItem key={entree.title + index} title={entree.title} price={entree.price} tags={entree.tags} />
           ))}
         </div>
@@ -28,7 +30,7 @@ const MainCourseMenu = () => (
       <div className="app__maincourseMenu-menu_maincourse  flex__center">
         <p className="app__maincourseMenu-menu_heading">Main Course Meals</p>
         <div className="app__maincourseMenu_menu_items">
-          {data.mainCourse.map((food, index) => (
+          {mainCourse.map((food, index) => (
             <MenuItem key={food.title + index} title={food.title} price={food.price} tags={food.tags} />
           ))}
         </div>
