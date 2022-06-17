@@ -56,30 +56,34 @@ const cocktails = [
   },
 ];
 
-const entree = [
+const mainCourse = [
   {
     title: 'Braised Short Ribs',
-    price: '$45'
+    price: '$65'
   },
   {
     title: "Barilla Lasagna",
-    price: '$65',
+    price: '$85',
   },
   {
     title: 'Chicken Cordon Bleu',
-    price: '$55',
+    price: '$75',
   },
   {
     title: 'Italian Stuffed Flank Steak',
-    price: '$59',
+    price: '$79',
   },
   {
     title: 'Eggplant Parmesan',
-    price: '$48',
+    price: '$68',
+  },
+  {
+    title: 'American Cuts',
+    price: '$129',
   },
 ];
 
-const mainCourse = [
+const entrees = [
   {
     title: 'Goat cheese pissaladiere tarts',
     price: '$35',
@@ -100,7 +104,11 @@ const mainCourse = [
     title: 'Lumpia',
     price: '$31',
   },
+  {
+    title: 'Onion Rings ',
+    price: '$25',
+  },
 ];
 
 
-export default { wines, cocktails, entree, mainCourse };
+export default { wines, cocktails, entrees, mainCourse };

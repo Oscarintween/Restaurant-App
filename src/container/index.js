@@ -3,8 +3,8 @@ import Chef from './Chef/Chef';
 import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import SpecialMenu from './Menu/SpecialMenu';
 import Reservation from './Reservation/Reservation';
+import Menu from './Menu/Menu';
 
 export {
   AboutUs,
@@ -13,5 +13,5 @@ export {
   Footer,
   Header,
   Reservation,
-  SpecialMenu,
+  Menu
 };

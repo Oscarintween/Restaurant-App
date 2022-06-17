@@ -15,9 +15,9 @@ const Reservation = () => {
             </div>
             <div className='app__wrapper-form app__reservation-item'>
                 <form action="">
-                    <input type="date" />
-                    <input type="time" />
-                    <input type="number" />
+                    <input className='inputDate' type="date" />
+                    <input className='inputTime' type="time" />
+                    <input className='inputNumber' type="range" min="1" max="8" placeholder='1' />
                 </form>
             </div>
             <button type="button" className="custom__button app__reservation-item" style={{ marginTop: '2rem' }}>Reserve</button>

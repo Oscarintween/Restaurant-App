@@ -1,20 +1,23 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Header, SpecialMenu, Reservation} from './container';
+import { AboutUs, Chef, FindUs, Footer, Header, Menu, Reservation} from './container';
 import { Navbar } from './components';
 import './App.css';
 
-const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Reservation />
-    <FindUs />
-    <Footer />
-  </div>
-);
+const App = () => {
+  return(
+    <div>
+      <Navbar />
+      <Header />
+      <AboutUs />
+      <Menu />
+      <Chef />
+      <Reservation />
+      <FindUs />
+      <Footer />
+    </div>
+  );
+}
+
 
 export default App;

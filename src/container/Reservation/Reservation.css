@@ -5,3 +5,9 @@
 .app__reservation_img img{
     border: solid 1.1vw #DCCA87;
 }
+.inputNumber{
+    font-size: large;
+    height: 4em;
+    width: 4em;
+    background-color:var(--color-grey);
+}
