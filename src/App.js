@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 import { AboutUs, Chef, FindUs, Footer, Header, Menu, Reservation} from './container';
 import { Navbar } from './components';
