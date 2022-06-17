@@ -14,7 +14,7 @@ import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import reservation from '../assets/reservation.jpg'
 
-export default {
+const images = {
   bg,
   chef,
   G,
@@ -31,3 +31,5 @@ export default {
   quote,
   gericht,
 };
+
+export default images
