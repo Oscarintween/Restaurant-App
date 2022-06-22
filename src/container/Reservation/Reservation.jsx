@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { SubHeading } from '../../components'
 import './Reservation.css'
 import { images } from '../../constants'
@@ -22,11 +22,11 @@ const Reservation = () => {
       const reservationsArr = []
       onSnapshot(collectionDb, (snapshot) => {
           snapshot.docs.forEach((doc) => {
-              console.log(doc.data())
-              reservationsArr.push(doc.data())
+            reservationsArr.push(doc.data())
+            console.log(doc.data())
+              
           })
       })
-    //   setReservationsState(reservationsArr)
   }
 
   const handleChange = (ev) => {
@@ -34,7 +34,6 @@ const Reservation = () => {
       ...form,
       [ev.name]: ev.value,
     })
-    console.log(form)
   }
 
   const addReservation = async () => {
@@ -42,9 +41,6 @@ const Reservation = () => {
     getReservation()
   }
 
-useEffect(()=>{
-    getReservation()
-}, [])
 
   return (
     <div className="app__bg app__wrapper section__padding" id="reservation">
@@ -56,9 +52,12 @@ useEffect(()=>{
             </div>
             <div className='app__wrapper-form app__reservation-item'>
                 <form action="">
-                    <input className='inputDate' name="fecha" onChange={(ev) => handleChange(ev.target)}  type="date" />
-                    <input className='inputTime' name="horas" onChange={(ev) => handleChange(ev.target)}  type="time" />
-                    <input className='inputNumber' name="personas" onChange={(ev) => handleChange(ev.target)}  type="range" min="1" max="8" placeholder='1' />
+                    <input className='inputText' name="name" onChange={(ev) => handleChange(ev.target)} placeholder="Full Name"  type="text" /><br />
+                    <input className='inputText' name="email" onChange={(ev) => handleChange(ev.target)} placeholder="Email adress" type="text" /><br />
+                    <input className='inputText' name="phone" onChange={(ev) => handleChange(ev.target)} placeholder="Phone Number" type="text" /><br />
+                    <input className='inputText' name="guests" onChange={(ev) => handleChange(ev.target)} placeholder="Number of Guests" type="text" /><br />
+                    <input className='inputDate' name="date" onChange={(ev) => handleChange(ev.target)}  type="date" />
+                    <input className='inputTime' name="time" onChange={(ev) => handleChange(ev.target)}  type="time" />
                 </form>
             </div>
             <button type="button" onClick={() => addReservation()} className="custom__button app__reservation-item" style={{ marginTop: '2rem' }}>Reserve</button>

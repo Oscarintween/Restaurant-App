@@ -5,9 +5,16 @@
 .app__reservation_img img{
     border: solid 1.1vw #DCCA87;
 }
-.inputNumber{
+input{
     font-size: large;
-    height: 4em;
-    width: 4em;
-    background-color:var(--color-grey);
+    background-color: lightgrey;
+    height: 4vw;
+    margin: 1vw;
+    border-radius: 5px;
+}
+.inputText{
+    width: 30vw;
+}
+.inputText:focus{
+    background-color: var(--color-white);
 }
